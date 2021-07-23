@@ -1,0 +1,7 @@
+{
+  "name": "@eterna/typescript-config",
+  "description": "Eterna TypeScript Config",
+  "peerDependencies": {
+    "typescript": "4.x"
+  }
+}
