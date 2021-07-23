@@ -1,0 +1,67 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
+
+module.exports = {
+  devServer: {
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    open: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.s?css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: ["postcss-preset-env"],
+              },
+            },
+          },
+          "sass-loader",
+        ],
+      },
+      {
+        test: /\.(jpg|png)$/,
+        type: "asset/resource",
+      },
+      {
+        test: /\.svg$/,
+        use: "@svgr/webpack",
+      },
+      {
+        test: /\.(eot|otf|ttf|woff|woff2)$/i,
+        type: "asset/resource",
+      },
+    ],
+  },
+  output: {
+    clean: true,
+    filename: "js/main.js",
+    path: path.resolve("./dist"),
+    publicPath: "/",
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: path.resolve("./src/index.html"),
+    }),
+    new MiniCssExtractPlugin({
+      chunkFilename: "[id].css",
+      filename: "css/[name].css",
+      ignoreOrder: false,
+    }),
+  ],
+  resolve: {
+    alias: {
+      react: path.resolve("./node_modules/react"),
+    },
+  },
+  target: "web",
+};
