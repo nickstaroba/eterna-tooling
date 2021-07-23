@@ -1,0 +1,10 @@
+{
+  "name": "@eterna/stylelint-config-sass",
+  "description": "Eterna Stylelint Config for SASS Projects",
+  "peerDependencies": {
+    "stylelint": "13.x",
+    "stylelint-config-prettier": "8.x",
+    "stylelint-config-recommended": "5.x",
+    "stylelint-config-sass-guidelines": "8.x"
+  }
+}
