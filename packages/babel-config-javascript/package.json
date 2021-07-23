@@ -1,6 +1,6 @@
 {
   "name": "@eterna/babel-config-javascript",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Eterna Babel Config for JavaScript Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {
