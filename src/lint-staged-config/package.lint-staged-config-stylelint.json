@@ -1,0 +1,8 @@
+{
+  "name": "@eterna/lint-staged-config-stylelint",
+  "description": "Eterna Lint-staged Config for Stylelint",
+  "peerDependencies": {
+    "lint-staged": "11.x",
+    "stylelint": "13.x"
+  }
+}

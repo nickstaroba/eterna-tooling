@@ -1,0 +1,19 @@
+{
+  "name": "@eterna/lint-staged-config-eslint",
+  "version": "0.0.0",
+  "description": "Eterna Lint-staged Config for ESLint",
+  "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
+  "bugs": {
+    "url": "https://github.com/nickstaroba/eterna-tooling/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickstaroba/eterna-tooling.git"
+  },
+  "license": "MIT",
+  "author": "Nick Staroba",
+  "peerDependencies": {
+    "eslint": "7.x",
+    "lint-staged": "11.x"
+  }
+}

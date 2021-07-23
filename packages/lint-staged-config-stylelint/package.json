@@ -1,0 +1,19 @@
+{
+  "name": "@eterna/lint-staged-config-stylelint",
+  "version": "0.0.0",
+  "description": "Eterna Lint-staged Config for Stylelint",
+  "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
+  "bugs": {
+    "url": "https://github.com/nickstaroba/eterna-tooling/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickstaroba/eterna-tooling.git"
+  },
+  "license": "MIT",
+  "author": "Nick Staroba",
+  "peerDependencies": {
+    "lint-staged": "11.x",
+    "stylelint": "13.x"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@eterna/lint-staged-config-eslint",
+  "description": "Eterna Lint-staged Config for ESLint",
+  "peerDependencies": {
+    "eslint": "7.x",
+    "lint-staged": "11.x"
+  }
+}
