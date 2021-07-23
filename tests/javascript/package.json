@@ -1,0 +1,25 @@
+{
+  "name": "javascript",
+  "scripts": {
+    "dev": "webpack serve --open --mode development",
+    "lint": "npm run lint:prettier && npm run lint:eslint && npm run lint:stylelint",
+    "lint-staged": "lint-staged",
+    "lint:eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --resolve-plugins-relative-to ./",
+    "lint:prettier": "prettier \"./**/*.{css,html,js,json,jsx,md,scss,ts,tsx}\" --write",
+    "lint:stylelint": "stylelint \"./**/*.{css,scss}\" --fix",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@eterna/babel-config-javascript": "latest",
+    "@eterna/eslint-config-javascript": "latest",
+    "@eterna/jest-config-javascript": "latest",
+    "@eterna/lint-staged-config-eslint": "latest",
+    "@eterna/lint-staged-config-prettier": "latest",
+    "@eterna/lint-staged-config-stylelint": "latest",
+    "@eterna/stylelint-config-sass": "latest",
+    "@eterna/webpack-config-javascript": "latest",
+    "@testing-library/dom": "8.1.0",
+    "@testing-library/jest-dom": "5.14.1",
+    "normalize.css": "8.0.1"
+  }
+}

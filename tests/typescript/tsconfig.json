@@ -1,0 +1,5 @@
+{
+  "extends": "@eterna/typescript-config/tsconfig.json",
+  "exclude": ["dist/", "node_modules/"],
+  "include": ["src/"]
+}
