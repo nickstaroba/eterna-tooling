@@ -1,0 +1,10 @@
+{
+  "name": "@eterna/jest-config-javascript",
+  "description": "Eterna Jest Config for JavaScript Projects",
+  "peerDependencies": {
+    "@testing-library/dom": "8.x",
+    "@testing-library/jest-dom": "5.x",
+    "babel-jest": "27.x",
+    "jest": "27.x"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@eterna/jest-config-javascript",
+  "version": "0.0.0",
+  "description": "Eterna Jest Config for JavaScript Projects",
+  "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
+  "bugs": {
+    "url": "https://github.com/nickstaroba/eterna-tooling/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickstaroba/eterna-tooling.git"
+  },
+  "license": "MIT",
+  "author": "Nick Staroba",
+  "peerDependencies": {
+    "@testing-library/dom": "8.x",
+    "@testing-library/jest-dom": "5.x",
+    "babel-jest": "27.x",
+    "jest": "27.x"
+  }
+}

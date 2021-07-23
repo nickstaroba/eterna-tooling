@@ -1,0 +1,25 @@
+{
+  "name": "@eterna/jest-config-typescript",
+  "version": "0.0.0",
+  "description": "Eterna Jest Config for TypeScript Projects",
+  "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
+  "bugs": {
+    "url": "https://github.com/nickstaroba/eterna-tooling/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickstaroba/eterna-tooling.git"
+  },
+  "license": "MIT",
+  "author": "Nick Staroba",
+  "peerDependencies": {
+    "@testing-library/dom": "8.x",
+    "@testing-library/jest-dom": "5.x",
+    "@types/jest": "26.x",
+    "babel-jest": "27.x",
+    "jest": "27.x",
+    "ts-jest": "27.x",
+    "ts-node": "10.1.0",
+    "typescript": "4.x"
+  }
+}
