@@ -1,0 +1,10 @@
+{
+  "command": {
+    "version": {
+      "message": "chore(release): bump version",
+      "conventionalCommits": true
+    }
+  },
+  "packages": ["packages/*"],
+  "version": "independent"
+}

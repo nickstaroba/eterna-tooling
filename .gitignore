@@ -1,0 +1,15 @@
+# Project Directories
+coverage/
+dist/
+node_modules/
+storage/
+
+# IDE
+.idea/
+.vscode/
+
+# Misc
+.DS_store
+
+# Logs
+*.log
