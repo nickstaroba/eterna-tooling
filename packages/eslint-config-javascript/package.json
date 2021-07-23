@@ -1,0 +1,23 @@
+{
+  "name": "@eterna/eslint-config-javascript",
+  "version": "0.0.0",
+  "description": "Eterna ESLint Config for JavaScript Projects",
+  "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
+  "bugs": {
+    "url": "https://github.com/nickstaroba/eterna-tooling/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickstaroba/eterna-tooling.git"
+  },
+  "license": "MIT",
+  "author": "Nick Staroba",
+  "peerDependencies": {
+    "eslint": "7.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-config-prettier": "8.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-simple-import-sort": "7.x",
+    "prettier": "2.x"
+  }
+}
