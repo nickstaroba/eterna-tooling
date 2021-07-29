@@ -2,7 +2,7 @@
   "description": "Eterna ESLint Config for JavaScript Projects",
   "version": "0.0.1",
   "name": "@eterna/eslint-config-javascript",
-  "peerDependencies": {
+  "dependencies": {
     "eslint": "7.x",
     "eslint-config-airbnb-base": "14.x",
     "eslint-config-prettier": "8.x",

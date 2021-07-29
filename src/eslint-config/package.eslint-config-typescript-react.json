@@ -1,7 +1,7 @@
 {
   "name": "@eterna/eslint-config-typescript-react",
   "description": "Eterna ESLint Config for TypeScript React Projects",
-  "peerDependencies": {
+  "dependencies": {
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "react": "17.x",

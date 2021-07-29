@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "author": "Nick Staroba",
-  "peerDependencies": {
+  "dependencies": {
     "@commitlint/cli": "12.x",
     "@commitlint/config-conventional": "12.x"
   }

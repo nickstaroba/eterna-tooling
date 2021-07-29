@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "author": "Nick Staroba",
-  "peerDependencies": {
+  "dependencies": {
     "lint-staged": "11.x",
     "prettier": "2.x"
   }

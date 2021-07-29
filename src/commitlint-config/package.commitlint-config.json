@@ -2,7 +2,7 @@
   "name": "@eterna/commitlint-config",
   "description": "Eterna Commitlint Config",
   "version": "0.0.1",
-  "peerDependencies": {
+  "dependencies": {
     "@commitlint/cli": "12.x",
     "@commitlint/config-conventional": "12.x"
   }

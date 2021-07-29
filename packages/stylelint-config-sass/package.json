@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "author": "Nick Staroba",
-  "peerDependencies": {
+  "dependencies": {
     "stylelint": "13.x",
     "stylelint-config-prettier": "8.x",
     "stylelint-config-recommended": "5.x",

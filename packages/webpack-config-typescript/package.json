@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "author": "Nick Staroba",
-  "peerDependencies": {
+  "dependencies": {
     "@svgr/webpack": "5.x",
     "css-loader": "6.x",
     "html-webpack-plugin": "5.x",
