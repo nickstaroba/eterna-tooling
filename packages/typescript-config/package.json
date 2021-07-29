@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "author": "Nick Staroba",
-  "peerDependencies": {
+  "dependencies": {
     "typescript": "4.x"
   }
 }

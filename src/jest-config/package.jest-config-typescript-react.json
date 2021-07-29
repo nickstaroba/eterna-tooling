@@ -1,7 +1,7 @@
 {
   "name": "@eterna/jest-config-typescript-react",
   "description": "Eterna Jest Config for TypeScript React Projects",
-  "peerDependencies": {
+  "dependencies": {
     "@testing-library/jest-dom": "5.x",
     "@testing-library/react": "12.x",
     "@testing-library/react-hooks": "7.x",

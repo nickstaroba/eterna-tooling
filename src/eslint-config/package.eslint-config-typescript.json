@@ -2,7 +2,7 @@
   "name": "@eterna/eslint-config-typescript",
   "description": "Eterna ESLint Config for TypeScript Projects",
   "version": "0.0.1",
-  "peerDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "4.x",
     "@typescript-eslint/parser": "4.x",
     "eslint-plugin-jest": "24.x",

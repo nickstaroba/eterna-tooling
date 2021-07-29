@@ -1,7 +1,7 @@
 {
   "name": "@eterna/webpack-config-typescript",
   "description": "Eterna Webpack Config for TypeScript Projects",
-  "peerDependencies": {
+  "dependencies": {
     "@svgr/webpack": "5.x",
     "css-loader": "6.x",
     "html-webpack-plugin": "5.x",

@@ -12,14 +12,11 @@
   },
   "license": "MIT",
   "author": "Nick Staroba",
-  "peerDependencies": {
-    "@testing-library/dom": "8.x",
-    "@testing-library/jest-dom": "5.x",
+  "dependencies": {
     "@types/jest": "26.x",
-    "babel-jest": "27.x",
-    "jest": "27.x",
     "ts-jest": "27.x",
     "ts-node": "10.1.0",
     "typescript": "4.x"
-  }
+  },
+  "peerDependencies": {}
 }

@@ -1,7 +1,7 @@
 {
   "name": "@eterna/jest-config-typescript",
   "description": "Eterna Jest Config for TypeScript Projects",
-  "peerDependencies": {
+  "dependencies": {
     "@types/jest": "26.x",
     "ts-jest": "27.x",
     "ts-node": "10.1.0",

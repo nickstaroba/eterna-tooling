@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "author": "Nick Staroba",
-  "peerDependencies": {
+  "dependencies": {
     "@babel/core": "7.x",
     "@babel/preset-env": "7.x"
   }
