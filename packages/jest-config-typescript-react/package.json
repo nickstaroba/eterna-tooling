@@ -1,6 +1,6 @@
 {
   "name": "@eterna/jest-config-typescript-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Eterna Jest Config for TypeScript React Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {
@@ -18,6 +18,5 @@
     "@testing-library/react-hooks": "7.x",
     "react": "17.x",
     "react-dom": "17.x"
-  },
-  "peerDependencies": {}
+  }
 }

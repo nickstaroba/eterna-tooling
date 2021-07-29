@@ -1,6 +1,6 @@
 {
   "name": "@eterna/eslint-config-typescript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Eterna ESLint Config for TypeScript Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {
@@ -18,6 +18,5 @@
     "eslint-plugin-jest": "24.x",
     "ts-jest": "27.x",
     "typescript": "4.x"
-  },
-  "peerDependencies": {}
+  }
 }
