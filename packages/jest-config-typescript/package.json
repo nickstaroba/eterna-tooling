@@ -1,6 +1,6 @@
 {
   "name": "@eterna/jest-config-typescript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Eterna Jest Config for TypeScript Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {
@@ -17,6 +17,5 @@
     "ts-jest": "27.x",
     "ts-node": "10.1.0",
     "typescript": "4.x"
-  },
-  "peerDependencies": {}
+  }
 }

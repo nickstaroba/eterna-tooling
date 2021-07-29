@@ -1,6 +1,6 @@
 {
   "name": "@eterna/commitlint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Eterna Commitlint Config",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {
