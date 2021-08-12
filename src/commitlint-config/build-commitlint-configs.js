@@ -1,15 +1,12 @@
-import path from "path";
-
-import { buildPackage } from "../build-package";
-import { configurePackageJson } from "../configure-package-json";
-import packageJson from "./package.commitlint-config.json";
-
-const configPath = path.resolve(__dirname, "commitlint-config.js");
-const packageName = "commitlint-config";
+import { buildConfig } from "../build-config";
+import { updateDependencies } from "../update-dependencies";
 
 export function buildCommitlintConfigs(done) {
-  configurePackageJson(packageName, packageJson).then(() =>
-    buildPackage(configPath, packageName)
-  );
+  buildConfig("commitlint");
+  done();
+}
+
+export function updateCommitlintDependencies(done) {
+  updateDependencies("commitlint");
   done();
 }
