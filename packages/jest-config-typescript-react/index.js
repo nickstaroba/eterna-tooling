@@ -1,9 +1,8 @@
-const jestConfigTypescript = require("./jest-config-typescript");
+const jestConfigBase = require("./jest-config-base");
 
 module.exports = {
-  ...jestConfigTypescript,
-  moduleNameMapper: {
-    ...jestConfigTypescript.moduleNameMapper,
-    "^react(.*)$": "<rootDir>/node_modules/react$1",
+  ...jestConfigBase,
+  transform: {
+    "^.+\\.(js|jsx|ts|tsx)?$": "ts-jest",
   },
 };

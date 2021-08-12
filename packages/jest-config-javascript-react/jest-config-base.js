@@ -17,9 +17,7 @@ module.exports = {
       "mock-file.js"
     ),
     "\\.s?css$": path.resolve(__dirname, "mock-style.js"),
+    "^react(.*)$": "<rootDir>/node_modules/react$1",
   },
   testEnvironment: "jsdom",
-  transform: {
-    "^.+\\.(js|jsx)$": "babel-jest",
-  },
 };
