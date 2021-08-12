@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@testing-library/jest-dom": "5.x",
+    "jest": "27.x"
+  }
+}

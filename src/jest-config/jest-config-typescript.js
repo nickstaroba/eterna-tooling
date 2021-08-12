@@ -1,7 +1,7 @@
-const jestConfigJavascript = require("./jest-config-javascript");
+const jestConfigBase = require("./jest-config-base");
 
 module.exports = {
-  ...jestConfigJavascript,
+  ...jestConfigBase,
   transform: {
     "^.+\\.(js|jsx|ts|tsx)?$": "ts-jest",
   },

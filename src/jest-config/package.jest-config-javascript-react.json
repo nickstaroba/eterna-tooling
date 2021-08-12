@@ -1,0 +1,11 @@
+{
+  "name": "@eterna/jest-config-javascript-react",
+  "description": "Eterna Jest Config for JavaScript React Projects",
+  "dependencies": {
+    "@testing-library/react": "12.x",
+    "@testing-library/react-hooks": "7.x",
+    "babel-jest": "27.x",
+    "react": "17.x",
+    "react-dom": "17.x"
+  }
+}
