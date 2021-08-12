@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["./eslint-config-typescript.js", "plugin:react/recommended"],
+  extends: ["plugin:react/recommended"],
   plugins: ["react", "react-hooks"],
   rules: {
     "react-hooks/rules-of-hooks": "error",

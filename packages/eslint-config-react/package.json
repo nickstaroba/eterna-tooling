@@ -1,7 +1,7 @@
 {
-  "name": "@eterna/eslint-config-typescript-react",
-  "version": "0.1.1",
-  "description": "Eterna ESLint Config for TypeScript React Projects",
+  "name": "@eterna/eslint-config-react",
+  "version": "0.0.0",
+  "description": "Eterna ESLint Config for React Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {
     "url": "https://github.com/nickstaroba/eterna-tooling/issues"

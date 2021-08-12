@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "eslint": "7.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-config-prettier": "8.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jest": "24.x",
+    "eslint-plugin-simple-import-sort": "7.x",
+    "prettier": "2.x"
+  }
+}

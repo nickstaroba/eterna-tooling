@@ -1,14 +1,7 @@
 module.exports = {
-  extends: [
-    "./eslint-config-javascript.js",
-    "plugin:@typescript-eslint/recommended",
-  ],
+  extends: ["./eslint-config-base.js", "plugin:@typescript-eslint/recommended"],
   parser: "@typescript-eslint/parser",
-  parserOptions: {
-    ecmaVersion: 2021,
-    sourceType: "module",
-  },
-  plugins: ["@typescript-eslint", "jest"],
+  plugins: ["@typescript-eslint"],
   rules: {
     "@typescript-eslint/no-namespace": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
@@ -19,4 +12,12 @@ module.exports = {
     ],
     "no-use-before-define": "off",
   },
+  overrides: [
+    {
+      files: ["**/*.js"],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
+  ],
 };
