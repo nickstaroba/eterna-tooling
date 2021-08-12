@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/jest-config-typescript-react@0.1.0...@eterna/jest-config-typescript-react@1.0.0) (2021-08-12)
+
+
+### Bug Fixes
+
+* **packages:** using dependencies instead of peerDependencies ([a9e31e5](https://github.com/nickstaroba/eterna-tooling/commit/a9e31e592006da90962183e9d380426f77ee7f4d))
+
+
+### Features
+
+* **jest:** adding base, javascript-react configs ([a4a459f](https://github.com/nickstaroba/eterna-tooling/commit/a4a459f57e39133c056e84e5a14b9a4958ae4d4b))
+
+
+
+
+
 ## [0.1.1](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/jest-config-typescript-react@0.1.0...@eterna/jest-config-typescript-react@0.1.1) (2021-07-29)
 
 
