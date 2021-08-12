@@ -14,6 +14,7 @@
   "author": "Nick Staroba",
   "dependencies": {
     "@svgr/webpack": "5.x",
+    "babel-loader": "8.x",
     "css-loader": "6.x",
     "html-webpack-plugin": "5.x",
     "mini-css-extract-plugin": "2.x",

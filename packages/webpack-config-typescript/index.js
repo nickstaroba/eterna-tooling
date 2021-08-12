@@ -1,9 +1,7 @@
-const path = require("path");
 const { merge } = require("webpack-merge");
 const baseConfig = require("./webpack-config-base");
 
 const typescriptConfig = {
-  entry: path.resolve("./src/index.ts"),
   module: {
     rules: [{ test: /\.tsx?$/, loader: "ts-loader" }],
   },
@@ -12,4 +10,4 @@ const typescriptConfig = {
   },
 };
 
-module.exports = merge(baseConfig, typescriptConfig);
+module.exports = (env, argv) => merge(baseConfig(env, argv), typescriptConfig);
