@@ -1,15 +1,17 @@
-import path from "path";
-
-import { buildPackage } from "../build-package";
-import { configurePackageJson } from "../configure-package-json";
-import stylelintPackageJson from "./package.stylelint-config-sass.json";
-
-const configPath = path.resolve(__dirname, "stylelint-config-sass.js");
-const packageName = "stylelint-config-sass";
+import { buildConfig } from "../build-config";
+import { updateDependencies } from "../update-dependencies";
+import { StylelintConfigTypes } from "./stylelint-config-types";
 
 export function buildStylelintConfig(done) {
-  configurePackageJson(packageName, stylelintPackageJson).then(() =>
-    buildPackage(configPath, packageName)
-  );
+  Object.values(StylelintConfigTypes).forEach((configType) => {
+    buildConfig("stylelint", configType);
+  });
+  done();
+}
+
+export function updateStylelintDependencies(done) {
+  Object.values(StylelintConfigTypes).forEach((configType) => {
+    updateDependencies("stylelint", configType);
+  });
   done();
 }
