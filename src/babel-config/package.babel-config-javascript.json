@@ -1,8 +1,5 @@
 {
   "name": "@eterna/babel-config-javascript",
   "description": "Eterna Babel Config for JavaScript Projects",
-  "dependencies": {
-    "@babel/core": "7.x",
-    "@babel/preset-env": "7.x"
-  }
+  "dependencies": {}
 }
