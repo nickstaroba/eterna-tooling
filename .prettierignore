@@ -1,3 +1,6 @@
 .idea/
+packages/
+storage/
+tests/
 CHANGELOG.md
 package-lock.json

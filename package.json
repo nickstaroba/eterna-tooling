@@ -12,27 +12,26 @@
   },
   "license": "MIT",
   "author": "Nick Staroba",
-  "workspaces": [
-    "./packages/*",
-    "./src/*"
-  ],
   "scripts": {
-    "lint": "npm run lint:prettier && npm run lint:eslint",
-    "lint-staged": "lint-staged",
-    "lint:eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --resolve-plugins-relative-to ./",
-    "lint:prettier": "prettier \"./**/*.{css,html,js,json,jsx,md,scss,ts,tsx}\" --write",
-    "packages:build": "gulp build",
-    "packages:publish-dry-run": "lerna exec \"npm publish --registry http://localhost:4873\"",
-    "packages:registry": "verdaccio",
-    "packages:update": "gulp update",
+    "lint": "npm run lint::prettier && npm run lint::eslint",
+    "lint::eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --resolve-plugins-relative-to ./ --ignore-pattern \"tests/**/*\"",
+    "lint::prettier": "prettier \"./**/*.{css,html,js,json,jsx,md,scss,ts,tsx}\" --write",
+    "packages::build": "gulp build",
+    "packages::build-tests": "gulp build --mode development",
+    "packages::publish-dry-run": "lerna exec \"npm publish --registry http://localhost:4873\"",
+    "packages::registry": "verdaccio",
+    "packages::update": "gulp update",
+    "tests::build": "for d in ./tests/*/ ; do (cd \"$d\" && echo -e \"\n$d\" && npm run build); done",
+    "tests::install": "for d in ./tests/*/ ; do (cd \"$d\" && echo -e \"\n$d\" && npm i); done",
+    "tests::lint": "for d in ./tests/*/ ; do (cd \"$d\" && echo -e \"\n$d\" && npm run lint); done",
+    "tests::test": "for d in ./tests/*/ ; do (cd \"$d\" && echo -e \"\n$d\" && npm run test); done",
     "postinstall": "husky install"
   },
   "dependencies": {
-    "@babel/core": "7.14.6",
     "@babel/plugin-transform-runtime": "7.14.5",
-    "@babel/preset-env": "7.14.7",
     "@babel/register": "7.14.5",
     "@babel/runtime": "7.14.6",
+    "@eterna/babel-config-javascript": "0.1.1",
     "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-rename": "2.0.0",
@@ -45,18 +44,10 @@
     "webpack-merge": "5.8.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
-    "@typescript-eslint/eslint-plugin": "4.28.3",
-    "@typescript-eslint/parser": "4.28.3",
-    "eslint": "7.31.0",
-    "eslint-config-airbnb-base": "14.2.1",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.23.4",
-    "eslint-plugin-simple-import-sort": "7.0.0",
+    "@eterna/commitlint-config": "0.1.1",
+    "@eterna/eslint-config-javascript": "0.1.1",
     "husky": "7.0.1",
     "lerna": "4.0.0",
-    "lint-staged": "11.0.1",
     "verdaccio": "5.1.2"
   }
 }
