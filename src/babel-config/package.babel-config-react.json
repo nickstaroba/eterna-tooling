@@ -1,0 +1,7 @@
+{
+  "name": "@eterna/babel-config-react",
+  "description": "Eterna Babel Config for React Projects",
+  "dependencies": {
+    "@babel/preset-react": "7.x"
+  }
+}

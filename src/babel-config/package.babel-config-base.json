@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@babel/core": "7.x",
+    "@babel/preset-env": "7.x"
+  }
+}
