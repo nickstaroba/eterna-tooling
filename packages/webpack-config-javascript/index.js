@@ -1,12 +1,13 @@
-const path = require("path");
 const { merge } = require("webpack-merge");
 const baseConfig = require("./webpack-config-base");
 
 const javascriptConfig = {
-  entry: path.resolve("./src/index.js"),
+  module: {
+    rules: [{ test: /\.jsx?$/, loader: "babel-loader" }],
+  },
   resolve: {
     extensions: [".css", ".js", ".json", ".jsx", ".scss"],
   },
 };
 
-module.exports = merge(baseConfig, javascriptConfig);
+module.exports = (env, argv) => merge(baseConfig(env, argv), javascriptConfig);

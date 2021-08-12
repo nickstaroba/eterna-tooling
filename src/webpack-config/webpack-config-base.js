@@ -2,19 +2,23 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
-module.exports = {
+module.exports = (env, argv) => ({
   devServer: {
+    contentBase: "./public",
     historyApiFallback: true,
     hot: true,
     inline: true,
     open: true,
+    publicPath: "/",
   },
   module: {
     rules: [
       {
         test: /\.s?css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          argv.mode === "development"
+            ? "style-loader"
+            : MiniCssExtractPlugin.loader,
           "css-loader",
           {
             loader: "postcss-loader",
@@ -64,4 +68,4 @@ module.exports = {
     },
   },
   target: "web",
-};
+});
