@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     jest: true,
+    "jest/globals": true,
   },
   extends: [
     "airbnb-base",
@@ -23,8 +24,9 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 2021,
+    sourceType: "module",
   },
-  plugins: ["import", "simple-import-sort"],
+  plugins: ["jest", "import", "simple-import-sort"],
   rules: {
     "import/no-extraneous-dependencies": [
       "error",
@@ -51,5 +53,6 @@ module.exports = {
         extensions: [".js", ".json", ".jsx", ".ts", ".tsx"],
       },
     },
+    "import/extensions": [".js", ".json", ".jsx", ".ts", ".tsx"],
   },
 };

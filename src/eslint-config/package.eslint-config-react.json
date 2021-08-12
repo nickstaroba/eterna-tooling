@@ -1,6 +1,6 @@
 {
-  "name": "@eterna/eslint-config-typescript-react",
-  "description": "Eterna ESLint Config for TypeScript React Projects",
+  "description": "Eterna ESLint Config for React Projects",
+  "name": "@eterna/eslint-config-react",
   "dependencies": {
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
