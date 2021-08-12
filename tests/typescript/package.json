@@ -1,20 +1,23 @@
 {
-  "name": "typescript",
+  "name": "@eterna/tooling-test-typescript",
   "scripts": {
-    "dev": "webpack serve --open --mode development",
-    "lint": "npm run lint:compile && npm run lint:prettier && npm run lint:eslint",
-    "lint:compile": "tsc -p . --noEmit --noErrorTruncation --pretty",
-    "lint:eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --resolve-plugins-relative-to ./",
-    "lint:prettier": "prettier \"./**/*.{css,html,js,json,jsx,md,scss,ts,tsx}\" --write",
-    "test": "jest"
+    "build": "webpack build --mode production",
+    "dev": "webpack serve --mode development",
+    "lint": "npm run lint::compile && npm run lint::prettier && npm run lint::eslint",
+    "lint::compile": "tsc -p . --noEmit --noErrorTruncation --pretty",
+    "lint::eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --resolve-plugins-relative-to ./",
+    "lint::prettier": "prettier \"./**/*.{css,html,js,json,jsx,md,scss,ts,tsx}\" --write",
+    "test": "jest --config .jestrc.js"
+  },
+  "dependencies": {
+    "@eterna/typescript-config": "latest",
+    "@eterna/webpack-config-typescript": "latest",
+    "webpack-merge": "5.x"
   },
   "devDependencies": {
     "@eterna/eslint-config-typescript": "latest",
     "@eterna/jest-config-typescript": "latest",
-    "@eterna/typescript-config": "latest",
-    "@eterna/webpack-config-typescript": "latest",
-    "@testing-library/dom": "8.1.0",
-    "@testing-library/jest-dom": "5.14.1",
-    "normalize.css": "8.0.1"
+    "@testing-library/dom": "8.x",
+    "@testing-library/jest-dom": "5.x"
   }
 }

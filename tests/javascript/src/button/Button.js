@@ -1,8 +1,8 @@
-import "./Button.style.scss";
+import "./Button.scss";
 
 export const Button = ({ label }) => {
   const button = document.createElement("button");
-  button.className = "button";
+  button.className = "Button";
   button.type = "button";
   button.innerHTML = label;
   return button;

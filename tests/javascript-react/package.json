@@ -1,25 +1,24 @@
 {
-  "name": "@eterna/tooling-test-typescript-react",
+  "name": "@eterna/tooling-test-javascript-react",
   "scripts": {
     "build": "webpack build --mode production",
     "dev": "webpack serve --mode development",
-    "lint": "npm run lint::compile && npm run lint::prettier && npm run lint::eslint",
-    "lint::compile": "tsc -p . --noEmit --noErrorTruncation --pretty",
+    "lint": "npm run lint::prettier && npm run lint::eslint",
     "lint::eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --resolve-plugins-relative-to ./",
     "lint::prettier": "prettier \"./**/*.{css,html,js,json,jsx,md,scss,ts,tsx}\" --write",
     "test": "jest --config .jestrc.js"
   },
   "dependencies": {
-    "@eterna/typescript-config": "latest",
-    "@eterna/webpack-config-typescript": "latest",
+    "@eterna/babel-config-react": "latest",
+    "@eterna/webpack-config-javascript": "latest",
     "react": "17.x",
     "react-dom": "17.x",
     "webpack-merge": "5.x"
   },
   "devDependencies": {
-    "@eterna/eslint-config-typescript": "latest",
+    "@eterna/eslint-config-javascript": "latest",
     "@eterna/eslint-config-react": "latest",
-    "@eterna/jest-config-typescript-react": "latest",
+    "@eterna/jest-config-javascript-react": "latest",
     "@testing-library/jest-dom": "5.x",
     "@testing-library/react": "12.x"
   }

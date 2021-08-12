@@ -1,19 +1,17 @@
-# Eterna Tooling Config Test JavaScript Project
+# Eterna Tooling Config Test Project - JavaScript
 
 Tested Packages:
 
 - babel-config-javascript
 - eslint-config-javascript
 - jest-config-javascript
-- lint-staged-config-eslint
-- lint-staged-config-prettier
-- lint-staged-config-stylelint
 - stylelint-config-sass
+- webpack-config-javascript
 
 ## Installation
 
 ```bash
-cd ./package-tests/javascript/
+cd tests/javascript/
 npm i
 ```
 

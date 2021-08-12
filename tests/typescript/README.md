@@ -1,15 +1,16 @@
-# Eterna Tooling Config Test TypeScript Project
+# Eterna Tooling Config Test Project - TypeScript
 
 Tested Packages:
 
 - eslint-config-typescript
 - jest-config-typescript
 - typescript-config
+- webpack-config-typescript
 
 ## Installation
 
 ```bash
-cd ./package-tests/typescript/
+cd tests/typescript/
 npm i
 ```
 
