@@ -1,6 +1,6 @@
 {
   "name": "@eterna/eslint-config-react",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Eterna ESLint Config for React Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {
