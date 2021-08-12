@@ -13,6 +13,7 @@ Example `.stylelintrc.js`
 ```javascript
 module.exports = {
   extends: ["@eterna/stylelint-config-sass"],
+  ignoreFiles: ["dist/**/*", "node_modules/**/*"],
   ...
 };
 ```
