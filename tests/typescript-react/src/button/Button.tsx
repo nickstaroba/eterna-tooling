@@ -7,5 +7,5 @@ interface IButtonProps {
 }
 
 export const Button: FC<IButtonProps> = ({ label }) => (
-  <button className={"button"}>{label}</button>
+  <button className={"Button"}>{label}</button>
 );
