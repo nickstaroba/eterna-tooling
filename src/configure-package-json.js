@@ -3,22 +3,22 @@ import prettier from "prettier";
 import sortPackageJson from "sort-package-json";
 
 import repositoryPackageJson from "../package.json";
+import { mode } from "./cli";
 import { writeFile } from "./write-file";
-
-export const outputDir = "./packages";
 
 export async function configurePackageJson(packageName, packageJsonTemplate) {
   const { author, bugs, homepage, license, repository } = repositoryPackageJson;
-  const outputPackageJsonPath = `${outputDir}/${packageName}/package.json`;
+  const outputPackageJsonPath = `./packages/${packageName}/package.json`;
 
   let version;
-  if (!fs.existsSync(outputPackageJsonPath)) {
-    version = "0.0.0";
-  } else {
-    version = JSON.parse(
-      fs.readFileSync(outputPackageJsonPath, "utf-8")
-    ).version;
-  }
+
+  version = fs.existsSync(outputPackageJsonPath)
+    ? JSON.parse(fs.readFileSync(outputPackageJsonPath, "utf-8")).version.split(
+        "-"
+      )[0]
+    : "0.0.0";
+
+  version = mode === "development" ? `${version}-${Date.now()}` : version;
 
   const packageJson = prettier.format(
     sortPackageJson(
