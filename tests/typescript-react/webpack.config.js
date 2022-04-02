@@ -1,5 +1,5 @@
-import baseConfig from "@eterna/webpack-config-typescript";
-import path = require("path");
+const baseConfig = require("@eterna/webpack-config-typescript");
+const path = require("path");
 
 const localConfig = {
   entry: path.resolve("./src/index.tsx"),

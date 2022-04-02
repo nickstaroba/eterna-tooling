@@ -9,17 +9,17 @@
     "test": "jest --config .jestrc.js"
   },
   "dependencies": {
-    "@eterna/babel-config-react": "latest",
-    "@eterna/webpack-config-javascript": "latest",
-    "react": "17.x",
-    "react-dom": "17.x",
+    "@eterna/babel-config-react": "prerelease",
+    "@eterna/webpack-config-javascript": "prerelease",
+    "react": "18.x",
+    "react-dom": "18.x",
     "webpack-merge": "5.x"
   },
   "devDependencies": {
-    "@eterna/eslint-config-javascript": "latest",
-    "@eterna/eslint-config-react": "latest",
-    "@eterna/jest-config-javascript-react": "latest",
+    "@eterna/eslint-config-javascript": "prerelease",
+    "@eterna/eslint-config-react": "prerelease",
+    "@eterna/jest-config-javascript-react": "prerelease",
     "@testing-library/jest-dom": "5.x",
-    "@testing-library/react": "12.x"
+    "@testing-library/react": "13.x"
   }
 }

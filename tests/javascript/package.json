@@ -10,14 +10,14 @@
     "test": "jest --config .jestrc.js"
   },
   "dependencies": {
-    "@eterna/babel-config-javascript": "latest",
-    "@eterna/webpack-config-javascript": "latest",
+    "@eterna/babel-config-javascript": "prerelease",
+    "@eterna/webpack-config-javascript": "prerelease",
     "webpack-merge": "5.x"
   },
   "devDependencies": {
-    "@eterna/eslint-config-javascript": "latest",
-    "@eterna/jest-config-javascript": "latest",
-    "@eterna/stylelint-config-sass": "latest",
+    "@eterna/eslint-config-javascript": "prerelease",
+    "@eterna/jest-config-javascript": "prerelease",
+    "@eterna/stylelint-config-sass": "prerelease",
     "@testing-library/dom": "8.x",
     "@testing-library/jest-dom": "5.x"
   }
