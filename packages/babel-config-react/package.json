@@ -1,6 +1,6 @@
 {
   "name": "@eterna/babel-config-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Eterna Babel Config for React Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {

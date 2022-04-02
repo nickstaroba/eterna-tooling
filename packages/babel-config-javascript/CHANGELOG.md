@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/babel-config-javascript@0.1.0...@eterna/babel-config-javascript@1.1.0) (2022-04-02)
+
+
+### Bug Fixes
+
+* **packages:** using dependencies instead of peerDependencies ([a9e31e5](https://github.com/nickstaroba/eterna-tooling/commit/a9e31e592006da90962183e9d380426f77ee7f4d))
+
+
+### Features
+
+* **babel:** adding base and react configs ([ddd26ec](https://github.com/nickstaroba/eterna-tooling/commit/ddd26ec0160f6efe1d6b6cba542844e012d0b7af))
+
+
+
+
+
 # [1.0.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/babel-config-javascript@0.1.0...@eterna/babel-config-javascript@1.0.0) (2021-08-12)
 
 

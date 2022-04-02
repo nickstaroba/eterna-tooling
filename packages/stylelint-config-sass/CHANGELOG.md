@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/stylelint-config-sass@0.1.0...@eterna/stylelint-config-sass@1.1.0) (2022-04-02)
+
+
+### Bug Fixes
+
+* **packages:** using dependencies instead of peerDependencies ([a9e31e5](https://github.com/nickstaroba/eterna-tooling/commit/a9e31e592006da90962183e9d380426f77ee7f4d))
+
+
+### Features
+
+* **packages:** updating dependencies ([b2fd06c](https://github.com/nickstaroba/eterna-tooling/commit/b2fd06cb02ba97a974b81f817de9a2dbfe74a741))
+* **stylelint:** add selector class pattern for BEM ([b2cfa0c](https://github.com/nickstaroba/eterna-tooling/commit/b2cfa0cda9909f19e07dc2e0ca13abf33a72f4ea))
+
+
+
+
+
 # [1.0.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/stylelint-config-sass@0.1.0...@eterna/stylelint-config-sass@1.0.0) (2021-08-12)
 
 
