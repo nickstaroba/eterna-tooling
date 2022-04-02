@@ -2,7 +2,7 @@
   "name": "@eterna/commitlint-config",
   "description": "Eterna Commitlint Config",
   "dependencies": {
-    "@commitlint/cli": "13.x",
-    "@commitlint/config-conventional": "13.x"
+    "@commitlint/cli": "16.x",
+    "@commitlint/config-conventional": "16.x"
   }
 }
