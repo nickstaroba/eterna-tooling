@@ -10,13 +10,13 @@
     "test": "jest --config .jestrc.js"
   },
   "dependencies": {
-    "@eterna/typescript-config": "latest",
-    "@eterna/webpack-config-typescript": "latest",
+    "@eterna/typescript-config": "prerelease",
+    "@eterna/webpack-config-typescript": "prerelease",
     "webpack-merge": "5.x"
   },
   "devDependencies": {
-    "@eterna/eslint-config-typescript": "latest",
-    "@eterna/jest-config-typescript": "latest",
+    "@eterna/eslint-config-typescript": "prerelease",
+    "@eterna/jest-config-typescript": "prerelease",
     "@testing-library/dom": "8.x",
     "@testing-library/jest-dom": "5.x"
   }
