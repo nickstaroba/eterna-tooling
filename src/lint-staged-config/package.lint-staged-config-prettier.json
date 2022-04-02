@@ -2,7 +2,7 @@
   "name": "@eterna/lint-staged-config-prettier",
   "description": "Eterna Lint-staged Config for Prettier",
   "dependencies": {
-    "lint-staged": "11.x",
+    "lint-staged": "12.x",
     "prettier": "2.x"
   }
 }

@@ -2,7 +2,7 @@
   "name": "@eterna/lint-staged-config-eslint",
   "description": "Eterna Lint-staged Config for ESLint",
   "dependencies": {
-    "eslint": "7.x",
-    "lint-staged": "11.x"
+    "eslint": "8.x",
+    "lint-staged": "12.x"
   }
 }
