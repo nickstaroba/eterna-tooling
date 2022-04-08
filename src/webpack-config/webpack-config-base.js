@@ -4,12 +4,10 @@ const path = require("path");
 
 module.exports = (env, argv) => ({
   devServer: {
-    contentBase: "./public",
     historyApiFallback: true,
     hot: true,
-    inline: true,
     open: true,
-    publicPath: "/",
+    static: { publicPath: "/" },
   },
   module: {
     rules: [
