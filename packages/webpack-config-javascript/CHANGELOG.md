@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/webpack-config-javascript@1.1.0...@eterna/webpack-config-javascript@1.1.1) (2022-04-08)
+
+
+### Bug Fixes
+
+* update webpack dev server configuration ([f7fafff](https://github.com/nickstaroba/eterna-tooling/commit/f7fafffb464ab935929c3e19ce8365002c76b1f8))
+
+
+
+
+
 # [1.1.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/webpack-config-javascript@0.1.0...@eterna/webpack-config-javascript@1.1.0) (2022-04-02)
 
 
