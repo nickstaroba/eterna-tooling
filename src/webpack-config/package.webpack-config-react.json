@@ -1,0 +1,9 @@
+{
+  "name": "@eterna/webpack-config-react",
+  "description": "Eterna Webpack Config for React Projects",
+  "dependencies": {
+    "@svgr/webpack": "6.x",
+    "react": "18.x",
+    "react-dom": "18.x"
+  }
+}

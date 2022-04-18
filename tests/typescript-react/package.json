@@ -1,5 +1,6 @@
 {
   "name": "@eterna/tooling-test-typescript-react",
+  "license": "MIT",
   "scripts": {
     "build": "webpack build --mode production",
     "dev": "webpack serve --mode development",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@eterna/typescript-config": "prerelease",
+    "@eterna/webpack-config-react": "prerelease",
     "@eterna/webpack-config-typescript": "prerelease",
     "react": "18.x",
     "react-dom": "18.x",

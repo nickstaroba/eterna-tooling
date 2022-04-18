@@ -3,6 +3,7 @@ import { updateDependencies } from "../update-dependencies";
 
 export const WebpackConfigTypes = Object.freeze({
   JAVASCRIPT: "javascript",
+  REACT: "react",
   TYPESCRIPT: "typescript",
 });
 

@@ -1,5 +1,6 @@
 {
   "name": "@eterna/tooling-test-javascript-react",
+  "license": "MIT",
   "scripts": {
     "build": "webpack build --mode production",
     "dev": "webpack serve --mode development",
@@ -11,6 +12,7 @@
   "dependencies": {
     "@eterna/babel-config-react": "prerelease",
     "@eterna/webpack-config-javascript": "prerelease",
+    "@eterna/webpack-config-react": "prerelease",
     "react": "18.x",
     "react-dom": "18.x",
     "webpack-merge": "5.x"
