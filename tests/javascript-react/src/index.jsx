@@ -1,6 +1,7 @@
 import React from "react";
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 
 import { Button } from "./button/Button";
 
-render(<Button label={"Hello!~"} />, document.getElementById("root"));
+const root = createRoot(document.getElementById("root"));
+root.render(<Button label={"Hello!~"} />);
