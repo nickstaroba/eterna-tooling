@@ -1,13 +1,24 @@
 const { merge } = require("webpack-merge");
-const baseConfig = require("./webpack-config-base");
+const configBase = require("./webpack-config-base");
 
-const typescriptConfig = {
-  module: {
-    rules: [{ test: /\.tsx?$/, loader: "ts-loader" }],
-  },
-  resolve: {
-    extensions: [".css", ".js", ".json", ".jsx", ".scss", ".ts", ".tsx"],
-  },
+const resolveTsx = {
+  extensions: [".tsx", ".ts", "..."],
 };
 
-module.exports = (env, argv) => merge(baseConfig(env, argv), typescriptConfig);
+const tsxRule = { test: /\.(ts|tsx)$/, loader: "ts-loader" };
+
+const mergeConfig = {
+  module: {
+    rules: [tsxRule],
+  },
+  resolve: resolveTsx,
+};
+
+function config(env, argv) {
+  return merge(configBase.config(env, argv), mergeConfig);
+}
+
+exports.configBase = configBase;
+exports.resolveTsx = resolveTsx;
+exports.tsxRule = tsxRule;
+exports.config = config;

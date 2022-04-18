@@ -1,3 +1,3 @@
-const { Button } = require("./button/Button");
+import { Button } from "./button/Button";
 
 document.querySelector("body").appendChild(Button({ label: "Hello!~" }));
