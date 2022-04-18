@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/webpack-config-javascript@1.1.1...@eterna/webpack-config-javascript@2.0.0) (2022-04-18)
+
+
+### Features
+
+* **webpack:** refactoring javascript and typescript configs ([6247c98](https://github.com/nickstaroba/eterna-tooling/commit/6247c9858c74dd08339be0d72fdd2d079fc2880d))
+
+
+### BREAKING CHANGES
+
+* **webpack:** Updated config exports from default to named. Use
+`configJavaScript.config` for example.
+
+
+
+
+
 ## [1.1.1](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/webpack-config-javascript@1.1.0...@eterna/webpack-config-javascript@1.1.1) (2022-04-08)
 
 
