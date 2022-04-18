@@ -13,9 +13,11 @@
   "license": "MIT",
   "author": "Nick Staroba",
   "dependencies": {
-    "@svgr/webpack": "6.x",
+    "@babel/core": "7.x",
+    "@babel/preset-env": "7.x",
     "babel-loader": "8.x",
     "css-loader": "6.x",
+    "html-loader": "3.x",
     "html-webpack-plugin": "5.x",
     "mini-css-extract-plugin": "2.x",
     "postcss-loader": "6.x",

@@ -1,5 +1,6 @@
 {
   "name": "@eterna/tooling-test-typescript",
+  "license": "MIT",
   "scripts": {
     "build": "webpack build --mode production",
     "dev": "webpack serve --mode development",

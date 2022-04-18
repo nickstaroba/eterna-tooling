@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "@svgr/webpack": "6.x",
     "css-loader": "6.x",
+    "html-loader": "3.x",
     "html-webpack-plugin": "5.x",
     "mini-css-extract-plugin": "2.x",
     "postcss-loader": "6.x",

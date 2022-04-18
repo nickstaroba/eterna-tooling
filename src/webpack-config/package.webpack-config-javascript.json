@@ -2,6 +2,8 @@
   "name": "@eterna/webpack-config-javascript",
   "description": "Eterna Webpack Config for JavaScript Projects",
   "dependencies": {
+    "@babel/core": "7.x",
+    "@babel/preset-env": "7.x",
     "babel-loader": "8.x"
   }
 }
