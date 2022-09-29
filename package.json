@@ -49,6 +49,6 @@
     "@eterna/eslint-config-javascript": "0.1.1",
     "husky": "7.0.1",
     "lerna": "4.0.0",
-    "verdaccio": "5.1.2"
+    "verdaccio": "5.15.3"
   }
 }
