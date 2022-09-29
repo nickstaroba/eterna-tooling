@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/lint-staged-config-stylelint@1.1.0...@eterna/lint-staged-config-stylelint@1.2.0) (2022-09-29)
+
+
+### Features
+
+* **packages:** updating dependencies ([676d1a4](https://github.com/nickstaroba/eterna-tooling/commit/676d1a4784b71ea8356fac4403e97e368ebfbca0))
+
+
+
+
+
 # [1.1.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/lint-staged-config-stylelint@0.1.0...@eterna/lint-staged-config-stylelint@1.1.0) (2022-04-02)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@eterna/lint-staged-config-prettier",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Eterna Lint-staged Config for Prettier",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {

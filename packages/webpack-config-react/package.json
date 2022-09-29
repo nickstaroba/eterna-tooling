@@ -1,6 +1,6 @@
 {
   "name": "@eterna/webpack-config-react",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Eterna Webpack Config for React Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {

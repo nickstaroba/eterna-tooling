@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/webpack-config-typescript@1.1.1...@eterna/webpack-config-typescript@3.0.0) (2022-09-29)
+
+
+### Features
+
+* **packages:** updating dependencies ([676d1a4](https://github.com/nickstaroba/eterna-tooling/commit/676d1a4784b71ea8356fac4403e97e368ebfbca0))
+* **webpack:** refactoring javascript and typescript configs ([c6561af](https://github.com/nickstaroba/eterna-tooling/commit/c6561af285fb74c66daf110fa48ef46d7598c0ab))
+
+
+### BREAKING CHANGES
+
+* **webpack:** Updated config exports from default to named. Use
+`configJavaScript.config` for example.
+
+
+
+
+
 # [2.0.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/webpack-config-typescript@1.1.1...@eterna/webpack-config-typescript@2.0.0) (2022-04-18)
 
 
