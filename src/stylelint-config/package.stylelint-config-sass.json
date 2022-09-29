@@ -4,7 +4,7 @@
   "dependencies": {
     "stylelint": "14.x",
     "stylelint-config-prettier": "9.x",
-    "stylelint-config-recommended": "7.x",
+    "stylelint-config-recommended": "9.x",
     "stylelint-config-sass-guidelines": "9.x"
   }
 }

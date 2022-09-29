@@ -13,7 +13,7 @@
   "license": "MIT",
   "author": "Nick Staroba",
   "dependencies": {
-    "@commitlint/cli": "16.x",
-    "@commitlint/config-conventional": "16.x"
+    "@commitlint/cli": "17.x",
+    "@commitlint/config-conventional": "17.x"
   }
 }

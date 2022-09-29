@@ -3,8 +3,7 @@
   "description": "Eterna Jest Config for JavaScript React Projects",
   "dependencies": {
     "@testing-library/react": "13.x",
-    "@testing-library/react-hooks": "7.x",
-    "babel-jest": "27.x",
+    "babel-jest": "29.x",
     "react": "18.x",
     "react-dom": "18.x"
   }

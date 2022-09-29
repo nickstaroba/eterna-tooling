@@ -13,7 +13,7 @@
   "license": "MIT",
   "author": "Nick Staroba",
   "dependencies": {
-    "lint-staged": "12.x",
+    "lint-staged": "13.x",
     "stylelint": "14.x"
   }
 }

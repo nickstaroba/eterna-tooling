@@ -3,8 +3,8 @@
   "description": "Eterna Jest Config for TypeScript Projects",
   "dependencies": {
     "@testing-library/dom": "8.x",
-    "@types/jest": "27.x",
-    "ts-jest": "27.x",
+    "@types/jest": "29.x",
+    "ts-jest": "29.x",
     "ts-node": "10.x",
     "typescript": "4.x"
   }

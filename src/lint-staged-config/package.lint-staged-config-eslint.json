@@ -3,6 +3,6 @@
   "description": "Eterna Lint-staged Config for ESLint",
   "dependencies": {
     "eslint": "8.x",
-    "lint-staged": "12.x"
+    "lint-staged": "13.x"
   }
 }

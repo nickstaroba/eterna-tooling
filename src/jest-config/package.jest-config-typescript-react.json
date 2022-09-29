@@ -3,13 +3,12 @@
   "description": "Eterna Jest Config for TypeScript React Projects",
   "dependencies": {
     "@testing-library/react": "13.x",
-    "@testing-library/react-hooks": "7.x",
-    "@types/jest": "27.x",
-    "@types/react": "17.x",
-    "@types/react-dom": "17.x",
+    "@types/jest": "29.x",
+    "@types/react": "18.x",
+    "@types/react-dom": "18.x",
     "react": "18.x",
     "react-dom": "18.x",
-    "ts-jest": "27.x",
+    "ts-jest": "29.x",
     "ts-node": "10.x",
     "typescript": "4.x"
   }
