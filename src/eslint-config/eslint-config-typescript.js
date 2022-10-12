@@ -5,6 +5,10 @@ module.exports = {
   rules: {
     "@typescript-eslint/no-namespace": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { ignoreRestSiblings: true },
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
