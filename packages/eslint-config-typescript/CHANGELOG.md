@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/eslint-config-typescript@1.2.0...@eterna/eslint-config-typescript@1.2.1) (2022-10-12)
+
+
+### Bug Fixes
+
+* adjusting eslint configs ([3b98849](https://github.com/nickstaroba/eterna-tooling/commit/3b98849ce0363c292ba8033c85c58557192bc476))
+
+
+
+
+
 # [1.2.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/eslint-config-typescript@1.1.0...@eterna/eslint-config-typescript@1.2.0) (2022-09-29)
 
 
