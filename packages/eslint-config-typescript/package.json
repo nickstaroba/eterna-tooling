@@ -19,10 +19,8 @@
     "eslint-config-airbnb-base": "15.x",
     "eslint-config-prettier": "8.x",
     "eslint-plugin-import": "2.x",
-    "eslint-plugin-jest": "27.x",
     "eslint-plugin-simple-import-sort": "8.x",
     "prettier": "2.x",
-    "ts-jest": "29.x",
     "typescript": "4.x"
   }
 }

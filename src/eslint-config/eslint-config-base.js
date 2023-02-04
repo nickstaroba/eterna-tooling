@@ -1,13 +1,10 @@
 module.exports = {
   env: {
     browser: true,
-    jest: true,
-    "jest/globals": true,
   },
   extends: [
     "airbnb-base",
     "plugin:import/errors",
-    "plugin:jest/recommended",
     "plugin:import/warnings",
     "prettier",
   ],
@@ -27,7 +24,7 @@ module.exports = {
     ecmaVersion: 2021,
     sourceType: "module",
   },
-  plugins: ["jest", "import", "simple-import-sort"],
+  plugins: ["import", "simple-import-sort"],
   rules: {
     "import/no-extraneous-dependencies": [
       "error",
