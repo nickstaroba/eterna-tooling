@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/eslint-config-javascript@1.2.1...@eterna/eslint-config-javascript@1.2.2) (2023-02-04)
+
+
+### Bug Fixes
+
+* adding eslint config extension for jest ([710ee49](https://github.com/nickstaroba/eterna-tooling/commit/710ee4992bbc33f6e3dbd4fbf5ff7a037748fff6))
+
+
+
+
+
 ## [1.2.1](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/eslint-config-javascript@1.2.0...@eterna/eslint-config-javascript@1.2.1) (2022-10-12)
 
 
