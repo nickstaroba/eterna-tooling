@@ -1,6 +1,6 @@
 {
   "name": "@eterna/eslint-config-typescript",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Eterna ESLint Config for TypeScript Projects",
   "homepage": "https://github.com/nickstaroba/eterna-tooling#readme",
   "bugs": {
