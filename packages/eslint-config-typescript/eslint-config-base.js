@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     "airbnb-base",
     "plugin:import/errors",
+    "plugin:jest/recommended",
     "plugin:import/warnings",
     "prettier",
   ],
