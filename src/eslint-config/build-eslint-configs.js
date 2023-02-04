@@ -3,6 +3,7 @@ import { updateDependencies } from "../update-dependencies";
 
 export const EslintConfigTypes = Object.freeze({
   JAVASCRIPT: "javascript",
+  JEST: "jest",
   REACT: "react",
   TYPESCRIPT: "typescript",
 });

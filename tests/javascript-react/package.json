@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eterna/eslint-config-javascript": "prerelease",
+    "@eterna/eslint-config-jest": "prerelease",
     "@eterna/eslint-config-react": "prerelease",
     "@eterna/jest-config-javascript-react": "prerelease",
     "@testing-library/jest-dom": "5.x",

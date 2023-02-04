@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@eterna/eslint-config-javascript": "prerelease",
+    "@eterna/eslint-config-jest": "prerelease",
     "@eterna/jest-config-javascript": "prerelease",
     "@eterna/stylelint-config-sass": "prerelease",
     "@testing-library/dom": "8.x",

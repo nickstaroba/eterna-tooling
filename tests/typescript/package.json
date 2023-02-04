@@ -16,6 +16,7 @@
     "webpack-merge": "5.x"
   },
   "devDependencies": {
+    "@eterna/eslint-config-jest": "prerelease",
     "@eterna/eslint-config-typescript": "prerelease",
     "@eterna/jest-config-typescript": "prerelease",
     "@testing-library/dom": "8.x",

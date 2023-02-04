@@ -1,0 +1,7 @@
+{
+  "description": "Eterna ESLint Config for Jest",
+  "name": "@eterna/eslint-config-jest",
+  "dependencies": {
+    "eslint-plugin-jest": "27.x"
+  }
+}
