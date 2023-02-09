@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/lint-staged-config-stylelint@1.2.0...@eterna/lint-staged-config-stylelint@1.2.1) (2023-02-09)
+
+
+### Bug Fixes
+
+* typo in lint-staged stylelint config ([43ac42d](https://github.com/nickstaroba/eterna-tooling/commit/43ac42d2298a26831fe90f82ae49834b2def07bd))
+
+
+
+
+
 # [1.2.0](https://github.com/nickstaroba/eterna-tooling/compare/@eterna/lint-staged-config-stylelint@1.1.0...@eterna/lint-staged-config-stylelint@1.2.0) (2022-09-29)
 
 
