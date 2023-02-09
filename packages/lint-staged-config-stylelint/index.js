@@ -1,3 +1,3 @@
 module.exports = {
-  "*.{css.scss}": ["stylelint --fix"],
+  "*.{css,scss}": ["stylelint --fix"],
 };
