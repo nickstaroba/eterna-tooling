@@ -1,0 +1,45 @@
+name: "Auto: Tag Release"
+
+run-name: ${{ github.workflow }} (${{ github.event.pull_request.title }})
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+jobs:
+  tag-release:
+    if: ${{ github.event.pull_request.merged == true && startsWith( github.head_ref, 'release' ) }}
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      packages: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Fetch Tags
+        run: git fetch --prune --unshallow --tags
+
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          cache: "npm"
+
+      - name: Configure Git User
+        run: |
+          git config --global user.name '${GITHUB_ACTOR}'
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+
+      - name: Tag Packages
+        run: sh ./scripts/tag-package-releases.sh
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}

@@ -1,0 +1,73 @@
+name: "Run: Create Release Pull Request"
+
+run-name: ${{ github.workflow }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        type: choice
+        default: ""
+        description: Bump Version
+        options:
+          -
+          - major
+          - minor
+          - patch
+          - premajor
+          - preminor
+          - prepatch
+          - prerelease
+
+jobs:
+  create-release-pull-request:
+    runs-on: ubuntu-latest
+
+    if: ${{ github.ref == 'refs/heads/main' }}
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Fetch Tags
+        run: git fetch --prune --unshallow --tags
+
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          cache: "npm"
+
+      - name: Configure Git User
+        run: |
+          git config --global user.name '${GITHUB_ACTOR}'
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+
+      - name: Install Packages
+        run: npm ci --ignore-scripts --production
+
+      - name: Bump Package Versions
+        run: lerna version ${{ inputs.version }} --yes --no-git-tag-version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Bump Repo Version
+        run: npm version minor --no-git-tag-version
+
+      - name: Get Repo Version
+        id: repo-version
+        uses: martinbeentjes/npm-get-version-action@main
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          author: "${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+          branch: "release/v${{ steps.repo-version.outputs.current-version }}"
+          commit-message: "chore: Release v${{ steps.repo-version.outputs.current-version }}"
+          committer: GitHub <noreply@github.com>
+          labels: "release"
+          title: "Release v${{ steps.repo-version.outputs.current-version }}"
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}

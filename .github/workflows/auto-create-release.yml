@@ -1,0 +1,26 @@
+name: "Auto: Create Release"
+
+run-name: "${{ github.workflow }} (${{ github.ref_name }})"
+
+on:
+  push:
+    tags:
+      - v*
+      - "@eterna/*"
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          name: "Release ${{ github.ref_name }}"
+          generateReleaseNotes: true
