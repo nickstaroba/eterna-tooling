@@ -1,0 +1,36 @@
+name: "Run: Publish Packages"
+
+run-name: ${{ github.workflow }}
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          always-auth: true
+          node-version: "18"
+          registry-url: "https://registry.npmjs.org"
+          scope: "@eterna"
+
+      - name: Install Packages
+        run: npm ci --ignore-scripts --production
+
+      - name: Build Packages
+        run: npm run build
+
+      - name: Publish Packages
+        run: lerna publish from-package --contents dist --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
