@@ -5,7 +5,7 @@ run-name: ${{ github.workflow }} (${{ github.event.pull_request.title }})
 on:
   pull_request:
     branches:
-      - main
+      - master
     types:
       - closed
 
