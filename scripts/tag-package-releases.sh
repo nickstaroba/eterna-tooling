@@ -1,6 +1,6 @@
 #!/bin/sh
 
-REPO_NAME=$(node -p -e "require('./package.json').name")
+REPO_NAME="eterna"
 REPO_VERSION=$(node -p -e "require('./package.json').version")
 REPO_TAG=v${REPO_VERSION}
 
