@@ -39,7 +39,7 @@ jobs:
           git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
 
       - name: Tag Packages
-        run: sh ./github/workflows/sh/tag-package-releases.sh
+        run: sh ./.github/workflows/sh/tag-package-releases.sh
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           PR_TITLE: ${{ github.event.pull_request.title }}
